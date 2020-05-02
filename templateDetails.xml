@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Nombre Template</name>
+	<version>1.0</version>
+	<creationDate>4/30/2020</creationDate>
+	<author>Luis BC</author>
+	<authorEmail>luinux81@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2020 Luis BC</copyright>
+	<description>Una descripción básica de la plantilla.</description>
+
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>favicon.ico</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>html</folder>
+        <folder>language</folder>
+        <folder>images</folder>
+    </files>
+
+    <positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>top</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+	</positions>
+
+    <config>
+        <fields name="params">
+            <fieldset name="Avanzado" label="Parametros">
+                <field name="templateColor" class="" type="color" default="#000"
+					label="Color"
+					description="Color del texto" 
+                />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#FFF"
+					label="Fondo"
+					description="Color de fondo" 
+                />
+
+                <field name="logoFile" class="" type="media" default=""
+					label="Logo"
+					description="Logo" 
+                />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="Titulo del sitio"
+					description="Titulo del sitio"
+					filter="string" 
+                />
+
+				<field name="sitedescription"  type="text" default=""
+					label="Descripción del sitio"
+					description="Descripción del sitio"
+					filter="string" 
+                />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Google Font"
+					description="Google Font"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="Nombre de fuente google"
+					description="Nombre de la fuente google" 
+					showon="googleFont:1"
+                />
+
+				<field name="bootstrap" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Usar Bootstrap"
+					description="Usar Bootstrap"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="bootstrapVersion"
+					type="list"
+					default="0"
+					label="Selecciona versión"
+					showon="bootstrap:1" 
+				>
+					<option value="0">Ninguno</option>
+					<option value="3">Bootstrap v3</option>
+					<option value="4">Bootstrap v4</option>
+				</field>
+
+				<field name="fluidContainer"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="Fluid Container"
+					description="Fluid Container"
+					showon="bootstrap:1"
+				>
+					<option value="1">FLUID</option>
+					<option value="0">STATIC</option>
+				</field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
