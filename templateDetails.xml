@@ -25,6 +25,8 @@
     <positions>
 		<position>banner</position>
 		<position>debug</position>
+		<position>nav</position>
+		<position>idiomas</position>
 		<position>top</position>
 		<position>position-0</position>
 		<position>position-1</position>
@@ -85,7 +87,7 @@
 					<option value="0">JNO</option>
 				</field>
 
-				<field name="googleFontName" class="" type="text" default="Open+Sans"
+				<field name="googleFontName" class="" type="text" default="Montserrat"
 					label="Nombre de fuente google"
 					description="Nombre de la fuente google" 
 					showon="googleFont:1"

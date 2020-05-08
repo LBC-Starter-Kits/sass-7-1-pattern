@@ -1,5 +1,13 @@
-/* Resets */
+/****************    Imports   ********************/
+@import './categorias.css';
+@import './articulos.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+
+
+/****************    Resets     ********************/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,4 +24,95 @@
     background-color: var(--color-fondo);
 }
 
+/**************** Media Queries ********************/
 
+/**************** 1.- Diseño móvil primero ********************/
+
+
+@media (min-width:599px){
+    .invisible-movil{
+        display: none !important;
+    }
+}
+
+@media (min-width:699px){
+
+}
+
+@media (min-width:799px){
+
+}
+
+@media (min-width:899px){
+    .invisible-desktop{
+        display: none !important;
+    }
+
+    .invisible-movil{
+        display: block !important;
+    }
+}
+
+@media (min-width:999px){
+
+}
+
+@media (min-width:1099px){
+
+}
+
+@media (min-width:1199px){
+
+}
+
+
+
+
+/**************** 2.- Diseño desktop primero ********************/
+
+
+@media (max-width:1199px){
+    .invisible-desktop{
+        display: none !important;
+    }
+}
+
+@media (max-width:1099px){
+
+}
+
+@media (max-width:999px){
+
+}
+
+@media (max-width:899px){
+    .invisible-desktop{
+        display: block !important;
+    }
+
+    .invisible-movil{
+        display: none !important;
+    }
+}
+
+@media (max-width:799px){
+
+}
+
+@media (max-width:699px){
+
+}
+
+@media (max-width:599px){
+
+}
+
+@media (max-width:399px){
+
+}
+
+
+/*Para pantallas de altura menor de 500px*/
+@media (max-height:500px){
+    
+}
