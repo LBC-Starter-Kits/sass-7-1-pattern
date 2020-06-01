@@ -21,7 +21,8 @@
         if($this->params['bootstrap']){
             switch($this->params['bootstrapVersion']){
                 case "3":
-                    echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/cjs/popper.min.js'></script>";
+                    echo "<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>";
+                    echo "<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>";
                     echo "<link href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu' crossorigin='anonymous'>";
                     echo "<script src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js' integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd' crossorigin='anonymous'></script>";
                     break;
@@ -33,8 +34,18 @@
                     break;                    
             }
         }
+
+        if($this->params['googleFont']){
+            $fuentes = explode(",",$this->params['googleFontName']);
+            foreach($fuentes as $fuente){
+                echo "<link href='https://fonts.googleapis.com/css2?family=" . trim($fuente) . ":ital,wght@0,400;0,700;1,400;1,700&display=swap' rel='stylesheet'>";
+            }
+        }
     ?>
 
+    <script src="https://kit.fontawesome.com/9a8051c774.js"></script>
+
+    <link rel="stylesheet" href="<?php echo $templatePath ?>/css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $templatePath ?>/css/main.css" type="text/css" />

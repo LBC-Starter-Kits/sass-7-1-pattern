@@ -1,6 +1,7 @@
 /****************    Imports   ********************/
 @import './categorias.css';
 @import './articulos.css';
+@import './menu.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -8,11 +9,15 @@
 
 
 /****************    Resets     ********************/
-* {
+/* Cambiado por normalize.css */
+/*
+* {    
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
+*/
+
 
 /* Variables --color-principal y --color-fondo definidos en el head de index.php */
 
