@@ -1,0 +1,273 @@
+nav{    
+    height:var(--altura);
+    background-color: rgba(0,0,0,.3);    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 4rem;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--altura);
+}
+
+.nav-menu li{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-menu li a{
+    color: var(--color-texto) !important;
+    background: unset !important;
+    background-image:unset !important;
+    background-color: aqua;
+    text-decoration: none;
+    border:none !important;
+    font-weight: bold !important;
+}
+
+
+.nav-menu li a:hover{
+    background: unset !important;
+    background-image:unset !important;
+}
+
+.nav-menu img{
+    height: 40px;
+}
+
+.nav-menu [class^="item-"] img{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-menu [class^="item-"] a:hover, .nav-menu [class^="item-"] img:hover{
+    background-color: rgba(0,0,0,0);
+}
+
+.menu{
+    list-style: none;
+    display: flex;    
+}
+
+.menu a{
+    text-decoration: none;    
+    text-transform: uppercase;    
+    margin:0 1rem;
+
+    color:var(--color-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-logo{
+    text-transform: uppercase;
+    color:var(--color-texto);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.menuItem__image{ /*Esta clase debe configurarse en el backend->Menus->MenuItem->Tipo de enlace->Clase CSS de la imagen o en una modificación del módulo de menu */
+    height: 50px;
+}
+
+
+
+/**** MODULOS *******/
+
+
+.mod-languages img{
+    height: 20px ;
+}
+
+li.lang-active img{
+    border: var(--color-destacar) solid 1px;
+}
+.ux-menu-container{
+    height:100%;
+}
+
+.ux-menu-horizontal{
+    display: flex;
+    height: 100%;
+}
+
+.ux-menu-sub{
+    width: 200px !important;
+    min-width: 200px;    
+}
+
+.ux-menu-item-parent a{
+    display: flex;
+    align-items: center;
+}
+
+.ux-menu-item-last{
+    order: 2;
+}
+
+.ux-menu-arrow{
+    position: unset;
+    margin-left: .5rem;
+}
+
+.ux-menu-item-level-1{
+    width: 200px !important;
+    min-width: 200px !important;
+    background-color: black !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.cart-mod{
+    order: 1;
+}
+
+.cart-mod div{
+    height: 100%;
+}
+
+.cart-mod .cart-item-info{    
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cart-mod .cart-item-info .link{
+    background: unset;
+    border: unset;
+    display: flex;
+    text-decoration: none;
+}
+
+.cart-mod .cart-item-info .link:hover{
+    text-decoration: none;
+}
+
+.cart-mod .cart-item-info i{
+    font-size: 35px;
+    color: var(--color-texto);
+}
+
+.cart-mod .cart-item-info .cart-item-count{
+    margin-left: -7px;
+    margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
+/* MENU MOVIL */
+.menu-movil{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.menu-movil .cart-item-info{
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.menu-movil .cart-item-info i{
+    font-size: 2rem;
+    color: var(--color-texto);
+}
+
+.menu-movil .cart-item-count{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.menu-movil__icono{
+    margin-left: 3rem;
+}
+
+
+.menu-movil__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+
+    visibility: hidden;
+
+    background-color: var(--color-primario);
+    color:var(--color-texto);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-movil__cerrar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 1rem;
+    font-size: 5vh;
+    z-index: 101;
+}
+
+.menu-movil__menu ul.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-movil__menu ul.nav a:hover{
+    background-color: unset;
+}
+
+.menu-movil__menu ul.nav img{
+    height: 40px;
+}
+
+.menu-movil__menu li.deeper > a{
+    display: none;
+}
+
+.menu-movil__menu li.deeper > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.menu-movil__menu li.deeper > ul >li:last-child{
+    margin-top: 1rem;
+}
+
+.menu-movil__menu .mod-languages{
+    position: relative;
+    /*bottom: 8vh;*/
+    margin: 4vh 0 1rem 0;
+}
+
+.menu-movil__menu .mod-languages li{
+    margin: 0 2rem;
+}

@@ -28,7 +28,9 @@
 		<position>nav</position>
 		<position>idiomas</position>
 		<position>top</position>
-		<position>position-0</position>
+		<position>position-menu</position>
+		<position>position-menumovil</position>
+		<position>position-menumovil-0</position>
 		<position>position-1</position>
 		<position>position-2</position>
 		<position>position-3</position>

@@ -3,6 +3,10 @@
 
     $templatePath = $this->baseurl . '/templates/' . $this->template; 
     $contenedor = $this->params['fluidContainer'] == 1 ? "container-fluid" : "container" ;
+
+    $app = JFactory::getApplication();
+    $menu = $app->getMenu();
+    $activo = $menu->getActive();
 ?>
 
 
@@ -58,18 +62,24 @@
     </style>
 </head>
 
-<body class="color-fondo">
+<body class="<?php echo strtolower($activo->alias); ?> color-fondo">
         <div class="<?php echo $contenedor; ?>">
             <header>
                 <nav>
-                    <div class="nav-movil invisible-desktop">                        
-                        <jdoc:include type="modules" name="nav" />
-                        <jdoc:include type="modules" name="idiomas" />
+                    <span class="nav-logo">LOGO</span>
+                    <div class="nav-menu invisible-movil">
+                        <jdoc:include type="modules" name="position-menu" />
                     </div>
-                    <div class="nav-desktop invisible-movil">                        
-                        <jdoc:include type="modules" name="nav" />
-                        <jdoc:include type="modules" name="idiomas" />
-                    </div>                    
+                    <div class="menu-movil invisible-desktop">
+                        <i class="menu-movil__icono fas fa-bars" onclick="abreMenu();"></i>
+
+                        <jdoc:include type="modules" name="position-menumovil" />
+                        
+                        <div id="menu-movil__menu" class="menu-movil__menu">
+                            <i class="menu-movil__cerrar fas fa-times-circle" onclick="cierraMenu();"></i>
+                            <jdoc:include type="modules" name="position-menumovil-0" />
+                        </div>
+                    </div>                   
                 </nav>        
             </header>
 

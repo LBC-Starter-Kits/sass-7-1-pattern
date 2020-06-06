@@ -90,7 +90,7 @@
 
 }
 
-@media (max-width:899px){
+@media (max-width:899px), (max-device-width:899px){
     .invisible-desktop{
         display: block !important;
     }
