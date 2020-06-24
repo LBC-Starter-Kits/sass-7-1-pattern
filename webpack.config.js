@@ -13,6 +13,10 @@ module.exports = {
         filename: "js/[name].js",
         path: path.resolve(__dirname,"dist"),
     },
+    watch: true,
+    watchOptions:{
+        ignored: /node_modules/
+    },
     module: {
         rules:[
             {
