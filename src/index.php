@@ -89,7 +89,7 @@
                         <jdoc:include type="component" />
                         <?php var_dump($this->params); ?>
                         <hr>
-                        <button class="btn btn-primary">Hola</button>
+                        <button class="btn btn-primary" onclick="abreMenu()">Hola</button>
                     </section>        
                 </main>
             </div>
@@ -103,5 +103,6 @@
 
 
     <script type="text/javascript" src="<?php echo $templatePath . '/js/main.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo $templatePath . '/js/vendors.js' ?>"></script>
 </body>
 </html>

@@ -9,3 +9,8 @@ function cierraMenu(){
     document.body.style.overflowY = "auto";
     document.documentElement.style.overflowY = "auto";
 }
+
+module.exports = {
+    abreMenu: abreMenu,
+    cierraMenu: cierraMenu,
+};
