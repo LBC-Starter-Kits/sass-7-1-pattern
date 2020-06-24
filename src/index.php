@@ -49,7 +49,6 @@
 
     <script src="https://kit.fontawesome.com/9a8051c774.js"></script>
 
-    <link rel="stylesheet" href="<?php echo $templatePath ?>/css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $templatePath ?>/css/main.css" type="text/css" />
