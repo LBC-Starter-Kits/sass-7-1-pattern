@@ -7,7 +7,7 @@ module.exports = {
     mode: "development",
     entry: {
         main: "./src/js/index.js",
-        vendor: "./src/js/vendors.js"
+        vendors: "./src/js/vendors.js"
     },
     output: {
         filename: "js/[name].js",
