@@ -114,6 +114,7 @@
 					<option value="0">Ninguno</option>
 					<option value="3">Bootstrap v3</option>
 					<option value="4">Bootstrap v4</option>
+					<option value="5">Bootstrap v5 Alpha</option>
 				</field>
 
 				<field name="fluidContainer"
