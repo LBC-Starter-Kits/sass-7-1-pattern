@@ -2,6 +2,17 @@
 
 Una plantilla de base con la estructura de una template Joomla.
 
+##Prerrequisitos
+* NodeJs
+
+## Preparación para desarrollo
+* En primer lugar crearemos un nuevo repositorio en nuestra máquina local y obtenemos el código desde el este repositorio.
+~~~
+git init foo
+cd foo
+git pull https://github.com/Luinux81/joomla-template-base.git
+~~~
+
 ## Getting Started
 
 Descomprimir el archivo zip en el directorio /templates/nombre_plantilla
