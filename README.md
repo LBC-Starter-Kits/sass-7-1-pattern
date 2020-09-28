@@ -2,7 +2,7 @@
 
 Una plantilla de base con la estructura de una template Joomla.
 
-##Prerrequisitos
+## Prerrequisitos
 * NodeJs
 
 ## Preparación para desarrollo
