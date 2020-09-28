@@ -13,6 +13,16 @@ cd foo
 git pull https://github.com/Luinux81/joomla-template-base.git
 ~~~
 
+* Instalamos las dependencias del archivo package.json
+~~~
+npm install
+~~~
+
+* Por último ejecutamos el script build
+~~~
+npm run build
+~~~
+
 ## Getting Started
 
 Descomprimir el archivo zip en el directorio /templates/nombre_plantilla
