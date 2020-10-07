@@ -59,43 +59,42 @@
 </head>
 
 <body class="<?php echo strtolower($activo->alias); ?> color-fondo">
-        <div class="<?php echo $contenedor; ?>">
-            <header>
-                <nav>
-                    <span class="nav-logo">LOGO</span>
-                    <div class="nav-menu invisible-movil">
-                        <jdoc:include type="modules" name="position-menu" />
+    <div class="<?php echo $contenedor; ?>">
+        <header>
+            <nav class="mainNav">
+                <span class="nav__logo">LOGO</span>
+                <div class="nav__menu nav__menu--desktop">
+                    <jdoc:include type="modules" name="position-menu" />
+                </div>
+                <div class="nav__menu nav__menu--movil">
+                    <i class="nav__icono nav__icono--abrir fas fa-bars" onclick="abreMenu();"></i>
+
+                    <jdoc:include type="modules" name="position-menumovil" />
+                    
+                    <div id="nav__menudiv" class="nav__menudiv">
+                        <i class="nav__icono nav__icono--cerrar fas fa-times-circle" onclick="cierraMenu();"></i>
+                        <jdoc:include type="modules" name="position-menumovil-0" />
                     </div>
-                    <div class="menu-movil invisible-desktop">
-                        <i class="menu-movil__icono fas fa-bars" onclick="abreMenu();"></i>
+                </div>                   
+            </nav>        
+        </header>
 
-                        <jdoc:include type="modules" name="position-menumovil" />
-                        
-                        <div id="menu-movil__menu" class="menu-movil__menu">
-                            <i class="menu-movil__cerrar fas fa-times-circle" onclick="cierraMenu();"></i>
-                            <jdoc:include type="modules" name="position-menumovil-0" />
-                        </div>
-                    </div>                   
-                </nav>        
-            </header>
-
-            <div class="contenido">
-                <main>
-                    <section>
-                        <jdoc:include type="component" />
-                        <?php var_dump($this->params); ?>
-                        <hr>
-                        <button class="btn btn-primary" onclick="abreMenu()">Hola</button>
-                    </section>        
-                </main>
-            </div>
-            
-
-            <footer>
-                <jdoc:include type="modules" name="footer" />
-            </footer>
+        <div class="contenido">
+            <main>
+                <section>
+                    <jdoc:include type="component" />
+                    <?php var_dump($this->params); ?>
+                    <hr>
+                    <button class="btn btn-primary" onclick="abreMenu()">Hola</button>
+                </section>        
+            </main>
         </div>
-    
+        
+
+        <footer>
+            <jdoc:include type="modules" name="footer" />
+        </footer>
+    </div>
 
 
 <?php
@@ -117,7 +116,9 @@
         }
     }
 ?>
-    <script type="text/javascript" src="<?php echo $templatePath . '/js/main.js' ?>"></script>
+
     <script type="text/javascript" src="<?php echo $templatePath . '/js/vendors.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo $templatePath . '/js/main.js' ?>"></script>    
+    
 </body>
 </html>
