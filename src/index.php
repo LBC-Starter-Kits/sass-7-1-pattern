@@ -60,7 +60,8 @@
 
 <body class="<?php echo strtolower($activo->alias); ?> color-fondo">
     <div class="<?php echo $contenedor; ?>">
-        <header>
+        
+    <header>
             <nav class="mainNav">
                 <span class="nav__logo">LOGO</span>
                 <div class="nav__menu nav__menu--desktop">
@@ -79,17 +80,18 @@
             </nav>        
         </header>
 
-        <div class="contenido">
-            <main>
+        <main>
+            <jdoc:include type="modules" name="position-top" />
+
+            <div class="contenido">                    
                 <section>
                     <jdoc:include type="component" />
-                    <?php var_dump($this->params); ?>
-                    <hr>
-                    <button class="btn btn-primary" onclick="abreMenu()">Hola</button>
-                </section>        
-            </main>
-        </div>
-        
+                    <?php /*var_dump($this->params); */ ?>
+                </section>     
+            </div>        
+
+            <jdoc:include type="modules" name="position-bottom" />
+        </main>
 
         <footer>
             <jdoc:include type="modules" name="footer" />
@@ -119,6 +121,6 @@
 
     <script type="text/javascript" src="<?php echo $templatePath . '/js/vendors.js' ?>"></script>
     <script type="text/javascript" src="<?php echo $templatePath . '/js/main.js' ?>"></script>    
-    
+
 </body>
 </html>
