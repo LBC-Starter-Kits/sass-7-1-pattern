@@ -2,6 +2,7 @@ const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+var ZipPlugin = require('zip-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -50,6 +51,10 @@ module.exports = {
                 { from: "./src/template_thumbnail.png", to: "template_thumbnail.png" },
                 { from: "./src/templateDetails.xml", to: "templateDetails.xml" },                
             ],
-        })
+        }),
+        new ZipPlugin({
+            path : '../dist_zip',
+            filename : 'j3_template_base.zip'
+        }),
     ],
 };
