@@ -57,7 +57,7 @@ module.exports = {
         }),
         new ZipPlugin({
             path : '../dist_zip',
-            filename : 'j3_template_base.zip'
+            filename : 'j4_template_templo2022.zip'
         }),
     ],
 };

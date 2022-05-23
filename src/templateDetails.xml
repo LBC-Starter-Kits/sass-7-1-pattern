@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.1" type="template" client="site">
-	<name>Nombre Template</name>
+	<name>Templo 2022</name>
 	<version>1.0</version>
-	<creationDate>4/30/2020</creationDate>
+	<creationDate>5/23/2022</creationDate>
 	<author>Luis BC</author>
 	<authorEmail>luinux81@gmail.com</authorEmail>
-	<copyright>Copyright (C) 2020 Luis BC</copyright>
-	<description>Una descripción básica de la plantilla.</description>
+	<copyright>Copyright (C) 2022 Luis BC</copyright>
+	<description>Plantilla Joomla para la web Templo Transition 2022</description>
 
     <files>
         <filename>index.php</filename>

@@ -1,6 +1,6 @@
-# Estructura base de una template para Joomla 3.x
+# Plantilla Joomla 4 para la web Templo Transition 2022
 
-Una plantilla de base con la estructura de una template Joomla.
+Plantilla Joomla 4 para la web Templo Transition 2022
 
 ## Prerrequisitos
 * NodeJs
@@ -10,7 +10,7 @@ Una plantilla de base con la estructura de una template Joomla.
 ~~~
 git init foo
 cd foo
-git pull https://github.com/Luinux81/joomla-template-base.git
+git pull https://github.com/Luinux81/joomla-template-templo-2022.git
 ~~~
 
 * Instalamos las dependencias del archivo package.json

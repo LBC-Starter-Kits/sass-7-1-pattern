@@ -1,7 +1,7 @@
 {
-  "name": "joomla-base-template",
+  "name": "joomla-template-templo-2022",
   "version": "1.0.0",
-  "description": "Una plantilla de base con la estructura de una template Joomla.",
+  "description": "Plantilla Joomla para la web Templo Transition 2022",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js"
