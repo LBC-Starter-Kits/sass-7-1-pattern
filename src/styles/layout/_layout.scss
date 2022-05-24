@@ -1,4 +1,4 @@
-$bg: wheat;
+$bg: black;
 
 body {
     background-color: $bg;
@@ -20,7 +20,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 75%;
-    background-color: white;
 }
 
 .contenido{
