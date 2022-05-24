@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="3.1" type="template" client="site">
+<extension version="4.0" type="template" client="site">
 	<name>Templo 2022</name>
 	<version>1.0</version>
 	<creationDate>5/23/2022</creationDate>
@@ -23,6 +23,9 @@
 
     <positions>
 		<position>position-menu</position>
+		<position>position-menu-top-izq</position>
+		<position>position-menu-top-der</position>
+		
 		<position>position-menumovil</position>
 		<position>position-top</position>
 		<position>position-bottom</position>	

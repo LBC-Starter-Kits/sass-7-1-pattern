@@ -4,7 +4,13 @@
     $templatePath = $this->baseurl . '/templates/' . $this->template; 
     $contenedor = $this->params['fluidContainer'] == 1 ? "container-fluid" : "container" ;
 
-    $app = JFactory::getApplication();
+    use Joomla\CMS\Factory as CMSFactory;
+    use Joomla\CMS\Application\CMSWebApplicationInterface as WebApp;
+    
+    /** @var WebApp */
+    $app = CMSFactory::getApplication();
+    // $app = JFactory::getApplication();
+
     $menu = $app->getMenu();
     $activo = $menu->getActive();
 ?>
@@ -58,15 +64,18 @@
     </style>
 </head>
 
-<body class="<?php echo strtolower($activo->alias); ?> color-fondo">
-    <div class="<?php echo $contenedor; ?>">
+<body class="<?php echo strtolower($activo->alias); ?> color-fondo ooo">
+    <div class="contenedor <?php echo $contenedor; ?>">
         
-    <header>
+        <header>
             <nav class="mainNav">
-                <span class="nav__logo">LOGO</span>
+                
                 <div class="nav__menu nav__menu--desktop">
-                    <jdoc:include type="modules" name="position-menu" />
+                    <jdoc:include type="modules" name="position-menu-top-izq" />
+                    <img class="nav__logo" src="images/2020/logo2020.png"></img>
+                    <jdoc:include type="modules" name="position-menu-top-der" />
                 </div>
+
                 <div class="nav__menu nav__menu--movil">
                     <i class="nav__icono nav__icono--abrir fas fa-bars" onclick="abreMenu();"></i>
 
@@ -76,18 +85,24 @@
                         <i class="nav__icono nav__icono--cerrar fas fa-times-circle" onclick="cierraMenu();"></i>
                         <jdoc:include type="modules" name="position-menumovil-0" />
                     </div>
-                </div>                   
-            </nav>        
+                </div>    
+
+            </nav>                    
         </header>
 
         <main>
             <jdoc:include type="modules" name="position-top" />
 
-            <div class="contenido">                    
-                <section>
-                    <jdoc:include type="component" />
-                    <?php /*var_dump($this->params); */ ?>
+            <div class="contenido">                  
+                <div class="contenido__sidebar--izq">
+                    <jdoc:include type="modules" name="position-1" />
+                </div> 
+                <section class="contenido__central">
+                    <jdoc:include type="component" />                    
                 </section>     
+                <div class="contenido__sidebar--der">
+                <jdoc:include type="modules" name="position-2" />
+                </div>
             </div>        
 
             <jdoc:include type="modules" name="position-bottom" />
