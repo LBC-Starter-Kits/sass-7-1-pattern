@@ -62,16 +62,17 @@ header{
     align-items: center;
 
     .nav-item{
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: white;
-        background-color: black;
-        border: 2px solid white;
+        padding: 0;
         
         a{
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: black;
+            border: 2px solid white;
             text-decoration: none;
             cursor: pointer;
+            padding: 1rem 1.5rem;
 
             &:hover, &:focus, &:active{
                 color: white;
