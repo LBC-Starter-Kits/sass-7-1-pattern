@@ -1,0 +1,62 @@
+$bg: wheat;
+
+body {
+    background-color: $bg;
+    height: 100vh;
+}
+
+.contenedor{
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: white;
+}
+
+.contenido{
+    display: flex;
+}
+
+.contenido__sidebar{
+    &--izq{
+        flex-grow: 0;
+        width: 33%;
+    }
+
+    &--der{
+        flex-grow: 0;
+        width: 33%;
+    }
+}
+
+.contenido__central{
+    flex-grow: 1;
+}
+
+/************************************************/
+/************************************************/
+                /* MEDIA QUERIES */
+/************************************************/
+/************************************************/
+
+@media (min-width:799px){
+    .nav__menu{      
+        &--desktop{
+            display: flex;
+        }
+    
+        &--movil{
+            display: none;
+        }
+    }
+}
