@@ -72,7 +72,7 @@
                 
                 <div class="nav__menu nav__menu--desktop">
                     <jdoc:include type="modules" name="position-menu-top-izq" />
-                    <img class="nav__logo" src="images/2020/logo2020.png"></img>
+                    <a href="."><img class="nav__logo" src="images/2020/logo2020.png"></img></a>
                     <jdoc:include type="modules" name="position-menu-top-der" />
                 </div>
 
@@ -91,7 +91,9 @@
         </header>
 
         <main>
-            <jdoc:include type="modules" name="position-top" />
+            <div class="hero">
+                <jdoc:include type="modules" name="position-top" />
+            </div>
 
             <div class="contenido">                  
                 <div class="contenido__sidebar--izq">

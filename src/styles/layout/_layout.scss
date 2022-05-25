@@ -20,26 +20,38 @@ main{
     display: flex;
     flex-direction: column;
     width: 75%;
+
+    .hero{
+        min-height: 20%;
+        margin-bottom: 0.2rem;
+    }
 }
 
 .contenido{
     display: flex;
+
+    img{
+        max-width: 100%;
+    }
 }
 
 .contenido__sidebar{
     &--izq{
         flex-grow: 0;
-        width: 33%;
+        width: 20%;
     }
 
     &--der{
         flex-grow: 0;
-        width: 33%;
+        width: 20%;
     }
 }
 
 .contenido__central{
     flex-grow: 1;
+    max-width: 60%;
+    padding: 0 1rem;    
+    margin-top: 1rem;
 }
 
 /************************************************/

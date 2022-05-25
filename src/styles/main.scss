@@ -18,12 +18,10 @@
 @import 'layout';
 
 // 5. Components
-@import
-  'components/button';
+@import 'components';
 
 // 6. Page-specific styles
-@import
-  'pages/home';
+@import 'pages';
 
 // 7. Themes
 @import
