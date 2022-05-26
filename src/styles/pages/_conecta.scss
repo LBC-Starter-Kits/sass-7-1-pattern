@@ -12,5 +12,14 @@
         }
     }
 
+    .hero{
+        height: 0px;
+        min-height: unset;
+    }
+    .clearfix-hero{
+        display: block;
+        height: 250px;
+    }
+
 
 }

@@ -14,4 +14,13 @@
     li{
         margin:.5rem 0;
     }
+
+    .hero{
+        height: 0px;
+        min-height: unset;
+    }
+    .clearfix-hero{
+        display: block;
+        height: 250px;
+    }
 }
