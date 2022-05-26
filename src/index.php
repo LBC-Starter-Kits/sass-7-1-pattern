@@ -94,6 +94,8 @@
             <div class="hero">
                 <jdoc:include type="modules" name="position-top" />
             </div>
+            
+            <div class="clearfix-hero"></div>
 
             <div class="contenido">                  
                 <div class="contenido__sidebar--izq">
