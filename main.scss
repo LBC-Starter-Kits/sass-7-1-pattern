@@ -8,11 +8,7 @@
 //   'vendors/normalize';
 
 // 3. Base stuff
-@import
-  //'base/helpers',
-  'base/base',
-  'base/fonts',
-  'base/typography';
+@import './base';
 
 // 4. Layout-related sections
 @import 'layout';
@@ -24,5 +20,4 @@
 @import 'pages';
 
 // 7. Themes
-@import
-  'themes/default';
+@import 'themes/default';
