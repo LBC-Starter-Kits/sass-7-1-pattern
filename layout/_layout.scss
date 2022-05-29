@@ -54,6 +54,52 @@ main{
     margin-top: 1rem;
 }
 
+#social{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 75px;
+    background-color: #DDDDDD;
+
+    .icons{        
+        a{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .social__imagen{
+        float:left;
+        margin-top:95px;
+    }
+}
+
+.shop-div-lateral {
+    position: fixed;
+    right: 0;
+    top: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 75px;
+    height: 4rem;
+    background-color: #DDDDDD;
+    color: black;
+    text-transform: uppercase;
+
+    a{
+        color: black;
+    }
+}
+
+#social img {
+    max-width: 100%;
+    width: 36px;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
 /************************************************/
 /************************************************/
                 /* MEDIA QUERIES */
