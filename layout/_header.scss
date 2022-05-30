@@ -65,10 +65,16 @@ header{
     font-size: 2rem;
     float: right;
 
-    @include mq("900","max"){
+    @include mq("tablet-wide","max"){
         position: absolute;
         top: 2.5rem;
         left: 2rem;
+    }
+
+    @include mq("phone-wide","max"){
+        position: absolute;
+        top: 2.5rem;
+        left: 1rem;
     }
 
     &--cerrar{
@@ -157,13 +163,13 @@ header{
         }
     }
 
-    @include mq('900','max'){
+    @include mq('tablet-wide','max'){
         display: none;
     }
 }
 
 .nav__menu--movil{
-    @include mq('900','max'){
+    @include mq('tablet-wide','max'){
         display: block;
     }
 }
