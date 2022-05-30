@@ -5,7 +5,11 @@
     }
     .clearfix-hero{
         display: block;
-        height: 250px;
+        height: 175px;
+
+        @include mq("tablet-wide", "max"){
+            height: unset;
+        }
     }
 
     .contenido__sidebar--izq, .contenido__sidebar--der {
