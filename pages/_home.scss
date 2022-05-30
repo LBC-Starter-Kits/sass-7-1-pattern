@@ -10,7 +10,17 @@
     .blog-featured{
         .item-title{            
             font-weight: normal;  
-            margin: 1.25rem 0;          
+            margin: 1.25rem 0;   
+            
+            @include mq("900", "max"){
+                font-size: 1.25rem;
+            }
+        }
+
+        .item-content{
+            p{
+                font-size: 1rem;
+            }
         }
     }
 }
