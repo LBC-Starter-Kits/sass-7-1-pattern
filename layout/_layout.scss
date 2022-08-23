@@ -58,6 +58,7 @@ main{
 
     img{
         max-width: 100%;
+        height: auto;
     }
 }
 
@@ -118,6 +119,7 @@ main{
     top: 100px;
     width: 75px;
     background-color: #DDDDDD;
+    z-index: 10;
 
     @include mq("tablet-wide","max"){
         position: absolute;
