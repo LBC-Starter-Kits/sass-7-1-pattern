@@ -47,7 +47,7 @@
 }
 
 
-@mixin typo($scale: 'perfect-fourth', $size){
+@mixin typo($size, $scale: 'perfect-fourth'){
   @if map-has-key($map: $typo-scales, $key: $scale ){
     $scale: map-get($map: $typo-scales, $key: $scale)
   }
