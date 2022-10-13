@@ -96,3 +96,10 @@ Uso:
   }
   color: $texto;
 }
+
+
+@mixin full-bleed($color){
+  background-color: $color;
+  box-shadow: 0 0 0 100vmax $color;
+  clip-path: inset(0 -100vmax);
+}
