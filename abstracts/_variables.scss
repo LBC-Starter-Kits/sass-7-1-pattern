@@ -103,11 +103,11 @@ $base-url: '/assets/' !default;
 
 
 :root{
-  --color-primary: $color-primary;
-  --color-secondary: $color-secondary;
-  --color-terciary: $color-terciary;
-  --color-accent: $color-accent;
-  --color-brand: $color-brand;
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-terciary: #{$color-terciary};
+  --color-accent: #{$color-accent};
+  --color-brand: #{$color-brand};
 
-  --color-text: $color-text;
+  --color-text: #{$color-text};
 }
