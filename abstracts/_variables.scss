@@ -22,15 +22,18 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $color-brand: rgb(34, 62, 187) !default;
 
-
 /// @type Color
 $color-primary:  rgb(0, 0, 0) !default;
 ///@type Color 
 $color-secondary:  rgb(0, 0, 0) !default;
 ///@type Color 
 $color-terciary:  rgb(0, 0, 0) !default;
+
+
 ///@type Color 
 $color-accent: $color-brand;
+///@type Color 
+$color-background: $color-secondary;
 
 /// @type Color
 $color-text: rgb(255, 255, 255) !default;
@@ -42,6 +45,20 @@ $light-grey: rgb(237, 237, 237) !default;
 $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
+
+
+/// Background color
+/// @type Color
+$bg-color: rgb(0, 0, 0) !default;
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(255, 255, 255) !default;
+
+/// Accent color
+/// @type Color
+$accent-color: rgb(34, 62, 187) !default;
+
 
 /// Container's maximum width
 /// @type Length
@@ -108,6 +125,7 @@ $base-url: '/assets/' !default;
   --color-terciary: #{$color-terciary};
   --color-accent: #{$color-accent};
   --color-brand: #{$color-brand};
+  --color-background: #{$color-background};
 
   --color-text: #{$color-text};
 }
