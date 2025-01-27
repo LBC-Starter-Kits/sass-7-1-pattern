@@ -1,6 +1,4 @@
-@import
-    './helpers',
-    './base',
-    './fonts',
-    './typography'
-;
+@use 'helpers';
+@use 'base';
+@use 'fonts';
+@use 'typography';

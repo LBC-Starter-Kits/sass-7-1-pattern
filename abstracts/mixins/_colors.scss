@@ -1,3 +1,4 @@
+@use "sass:color";
 /*
 Uso: 
 
@@ -44,14 +45,14 @@ Uso:
 /// @param {String} $label - Etiqueta para las variables generadas
 @mixin color-variables($color, $label) {    
   @for $i from 4 to 1 {
-    $shadow: adjust-color($color, $lightness: -$i * 10%);
+    $shadow: color.adjust($color, $lightness: -$i * 10%);
     --color-#{$label}-#{500 - ($i * 100)}: #{$shadow};
   }
   
   --color-#{$label}-500: #{$color};
 
   @for $i from 4 to 1 {
-    $tint: adjust-color($color, $lightness: $i * 10%);
+    $tint: color.adjust($color, $lightness: $i * 10%);
     --color-#{$label}-#{500 + ($i * 100)}: #{$tint};
   }
 }

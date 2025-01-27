@@ -1,3 +1,6 @@
+@use "../abstracts/mixins/utils";
+@use "../abstracts/variables";
+
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
@@ -27,11 +30,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: $color-brand;
+  color: variables.$color-brand;
   text-decoration: none;
   font-family: inherit;
 
-  @include on-event {
+  @include utils.on-event {
     // color: red;
     text-decoration: none;
   }

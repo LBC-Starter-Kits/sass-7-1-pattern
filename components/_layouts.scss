@@ -1,15 +1,18 @@
+@use "../abstracts/functions";
+@use "../abstracts/variables";
+
 // -----------------------------------------------------------------------------
 // This file contains reusable layouts and grids
 // -----------------------------------------------------------------------------
 
 .container{
     &--classic{
-        max-width: min(95%, $max-width);
+        max-width: min(95%, variables.$max-width);
         margin: 0 auto;
     }
 
     &--static{
-        max-width: $max-width;
+        max-width: variables.$max-width;
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
@@ -18,17 +21,17 @@
 
     &--fluid{
         --padding-inline: 1rem;
-        --content-max-width: #{$max-width};        
-        --breakout-max-width: calc(#{$max-width} + 10ch);
+        --content-max-width: #{variables.$max-width};        
+        --breakout-max-width: calc(#{variables.$max-width} + 10ch);
         --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
 
         display: grid;
         grid-template-columns: 
-        [full-width-start] css-minmax(var(--padding-inline), 1fr)
-        [breakout-start] css-minmax(0, var(--breakout-size)) 
-        [content-start] css-min(calc(100% - (var(--padding-inline) * 2)), var(--content-max-width)) [content-end] 
-        css-minmax(0, var(--breakout-size)) [breakout-end] 
-        css-minmax(var(--padding-inline), 1fr) [full-width-end];
+        [full-width-start] functions.css-minmax(var(--padding-inline), 1fr)
+        [breakout-start] functions.css-minmax(0, var(--breakout-size)) 
+        [content-start] functions.css-min(calc(100% - (var(--padding-inline) * 2)), var(--content-max-width)) [content-end] 
+        functions.css-minmax(0, var(--breakout-size)) [breakout-end] 
+        functions.css-minmax(var(--padding-inline), 1fr) [full-width-end];
 
         & > * {
             grid-column: content;
@@ -71,7 +74,7 @@
 
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, css-minmax( css-min(var(--min-column-size), 100%) , 1fr));    
+    grid-template-columns: repeat(auto-fit, functions.css-minmax( functions.css-min(var(--min-column-size), 100%) , 1fr));    
 }
 
 // Reel

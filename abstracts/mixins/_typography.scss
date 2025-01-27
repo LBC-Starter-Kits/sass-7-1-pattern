@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables";
+
 @use 'sass:list';
 
 
@@ -21,15 +24,15 @@
 /// @param {String} $size - Tamaño de la fuente deseado
 /// @param {String} $scale ['perfect-fourth'] - Escala tipográfica a utilizar; si no se encuentra en el mapa, se utiliza la escala predeterminada
 @mixin typo($size, $scale: 'perfect-fourth'){
-  @if map-has-key($map: $typo-scales, $key: $scale ){
-    $scale: map-get($map: $typo-scales, $key: $scale)
+  @if map.has-key($map: variables.$typo-scales, $key: $scale ){
+    $scale: map.get($map: variables.$typo-scales, $key: $scale)
   }
   @else{
-    $scale: $perfect-fourth;
+    $scale: variables.$perfect-fourth;
   }
 
 
-  @if map-has-key($map: $scale, $key: $size) {
-    font-size: map-get($scale, $size);
+  @if map.has-key($map: $scale, $key: $size) {
+    font-size: map.get($scale, $size);
   }
 }

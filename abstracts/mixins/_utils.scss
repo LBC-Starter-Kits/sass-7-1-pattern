@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables";
+
 @use 'sass:list';
 
 /// Event wrapper para los estados hover, active y focus
@@ -39,8 +42,8 @@
   /// @param {String} $width - El ancho del punto de ruptura (debe coincidir con una clave en el mapa $mq_breakpoints)
   /// @param {String} $type [min] - Tipo de media query (min o max)
   @mixin mq($width, $type: min) {
-    @if map_has_key($mq_breakpoints, $width) {
-        $width: map_get($mq_breakpoints, $width);
+    @if map.has-key(variables.$mq_breakpoints, $width) {
+        $width: map.get(variables.$mq_breakpoints, $width);
         @if $type == max {
             $width: $width - 1px;
         }

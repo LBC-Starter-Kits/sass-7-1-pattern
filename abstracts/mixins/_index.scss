@@ -4,9 +4,8 @@
 
 @use 'sass:list';
 
-@import 
-'./utils',
-'./typography',
-'./colors',
-'./effects';
+@use 'utils';
+@use 'typography';
+@use 'colors';
+@use 'effects';
 
